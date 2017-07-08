@@ -15,6 +15,33 @@ class LoginController extends Controller
 
 
     /**
+     * 用户手机发送短信验证码
+     */
+    public function phone_code(){
+        $data = array();
+        $param = $_GET ? $_GET : "";
+        $moblie = $param['phone'] ? $param['phone'] : "";
+        if(empty($moblie)){
+            $data['code'] = "202";
+            $data['msg'] = "参数错误！";
+            return $this->_array_to_json($data);
+        }
+        $code = $this->Send_code($moblie);
+        if(is_array($data) && !empty($data)){
+            $data['code'] = "200";
+            $data['msg'] = "验证码获取成功！";
+            $data['body'] = $code;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "验证码获取失败！";
+        }
+        return $this->_array_to_json($data);
+
+
+    }
+
+
+    /**
      * 用户注册
      */
     public function register(){
@@ -27,7 +54,7 @@ class LoginController extends Controller
         if(empty($nickname) || empty($password)){
             $data['code'] ="202";
             $data['msg'] = "参数错误!";
-            return $this->__json_array($data);
+            return $this->_array_to_json($data);
         }
         $re_ip = $_SERVER['REMOTE_ADDR'];
         $re_time = time();
@@ -42,7 +69,7 @@ class LoginController extends Controller
             $data['code'] = "202";
             $data['msg'] = "注册成失败!";
         }
-        return $this->__json_array($data);
+        return $this->_array_to_json($data);
 
     }
 
@@ -55,7 +82,7 @@ class LoginController extends Controller
         if(empty($param)){
             $data['code'] = "202";
             $data['msg'] = "参数错误!";
-            return $this->__json_array($data);
+            return $this->_array_to_json($data);
         }
         $data = array();
         $phone = $param['phone'] ? $param['phone'] : "";
@@ -74,7 +101,7 @@ class LoginController extends Controller
             $data['code'] = "202";
             $data['msg'] = "登录失败!";
         }
-        return $this->__json_array($data);
+        return $this->_array_to_json($data);
 
     }
 
@@ -92,12 +119,12 @@ class LoginController extends Controller
         if(empty($param['uid']) || empty($param['token'])){
             $data['code'] = "202";
             $data['msg'] = "参数错误！";
-            return $this->__json_array($data);
+            return $this->_array_to_json($data);
         }
         if(!check_token($uid,$token)){
             $data['code'] = "202";
             $data['msg'] = "身份验证失败,请重新登录！";
-            return $this->__json_array($data);
+            return $this->_array_to_json($data);
         }
         $usermodel = new UserModel();
         $update_password = $usermodel->update_password($uid,$newpassword);
@@ -109,8 +136,47 @@ class LoginController extends Controller
             $data['code'] = "202";
             $data['msg'] = "修改密码失败！";
         }
-        return $this->__json_array($data);
+        return $this->_array_to_json($data);
 
+
+    }
+
+
+    /**
+     * 修改个人信息
+     */
+    public function update_user_info(){
+        $data = array();
+        $param = $_POST ? $_POST : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        $nickname = $param['nickname'] ? $param['nickname'] : "";
+        $sex = $param['sex'] ? $param['sex'] : "";
+        $birthday = $param['birthday'] ? $param['birthday'] : "";
+        $token = $param['token'] ? $param['token'] : "";
+        $birthday = strtotime($birthday);
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        if(empty($uid)){
+            $data['code'] = "202";
+            $data['msg'] = "参数错误！";
+            return $this->_array_to_json($data);
+        }
+        $usermode = new UserModel();
+        $update_user_info = $usermode->update_user_info($uid,$nickname,$sex,$birthday);
+        if($update_user_info){
+            $data['code'] = "200";
+            $data['msg'] = "修改成功！";
+            $data['body'] = array(
+                'uid' => $uid
+            );
+        }else{
+            $data['code'] = "202";
+            $date['msg'] = "修改失败！";
+        }
+        return $this->_array_to_json($data);
 
     }
 
@@ -121,7 +187,54 @@ class LoginController extends Controller
      * 用户退出
      */
     public function login_out(){
+        $data = array();
+        $param = $_GET ? $_GET : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        if(empty($uid)){
+            $data['code'] = "202";
+            $data['msg'] = "参数错误！";
+            return $this->_array_to_json($data);
+        }
+        $setdata = array(
+            'is_login' => '0'
+        );
+        $update_user = M('user')->where('uid',$uid)->save($setdata);
+        if($update_user){
+            $data['code'] = "200";
+            $data['msg'] = "退出成功!";
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "退出失败！";
+        }
+        return $this->_array_to_json($data);
+        
+    }
 
+
+
+
+    /**
+     * @互亿无线api接口
+     * 发送短信验证
+     * @param -$mobile 用户手机号
+     * @return array;
+     */
+    public function Send_code($mobile){
+        $data = array();
+        //短信接口地址
+        $target = "http://106.ihuyi.cn/webservice/sms.php?method=Submit";
+        //6位随机验证码
+        $mobile_code = $this->random(6,1);
+        $post_data = "account=C54085965&password=c4ffd409e7f85abf00d7a8c4dbfb653f&mobile=";
+        $post_data .= $mobile."&content=".rawurlencode("您的验证码是：".$mobile_code."。请不要把验证码泄露给其他人。");
+        $gets = $this->xml_to_array($this->_post($post_data, $target));
+        if($gets['SubmitResult']['code']==2){
+            $data = array(
+                'mobile' => $mobile,
+                'mobile_code' => $mobile_code,
+            );
+        }
+        return $data;
     }
 
 
@@ -187,13 +300,6 @@ class LoginController extends Controller
     }
 
 
-    /**
-     * 发送短信验证
-     */
-    public function Send_code(){
-        //短信接口地址
-        $target = "http://106.ihuyi.cn/webservice/sms.php?method=Submit";
-    }
 
 
     /**
@@ -237,7 +343,7 @@ class LoginController extends Controller
     /**
      * 转换为json格式输出
      */
-    public function __json_array($data){
+    public function _array_to_json($data){
         $json = json_encode($data);
         return $json;
     }

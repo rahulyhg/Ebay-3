@@ -78,7 +78,7 @@ class UserModel extends Model
         }
         $password = md5(md5($password).$salt);
         if($password == $pass){
-            $sql = "update `eb_user` set `last_log_ip` = '$ip',`last_log_time` = '$last_time'
+            $sql = "update `eb_user` set `last_log_ip` = '$ip',`last_log_time` = '$last_time',`is_login` = '1'
                     WHERE `uid` = '$uid'";
             $res = $this->query($sql);
             if($res){
@@ -117,6 +117,37 @@ class UserModel extends Model
         }else{
             return false;
         }
+    }
+
+
+    /**
+     * 修改个人资料
+     * @param -$uid 用户uid -$nickname 用户名称 -$sex 用户性别  -$birthday 用户生日
+     * @return true or false
+     */
+    public function update_user_info($uid,$nickname = '',$sex = '',$birthday = ''){
+        if(empty($uid)){
+            return false;
+        }
+        $sql = "update `eb_user` set ";
+        if(!empty($nickname)){
+            $sql .= "`nickname` = '$nickname', ";
+        }
+        if(!empty($sex)){
+            $sql .= "`sex` = '$sex', ";
+        }
+        if(!empty($birthday)){
+            $sql .= "`birthday` = '$birthday' ";
+        }
+        $sql .= rtrim($sql,',');
+        $sql .= " where `uid` = '$uid'";
+        $res = $this->query($sql);
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
+
     }
 
 
