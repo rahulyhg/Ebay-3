@@ -8,6 +8,7 @@
 namespace Admin\Controller;
 use Admin\Model\UserModel;
 use Think\Controller;
+use Think\Smtp;
 class LoginController extends Controller
 {
 
@@ -240,7 +241,7 @@ class LoginController extends Controller
 
 
     /**
-     * @互亿无线api接口
+     * 互亿无线api接口
      * 发送短信验证
      * @param -$mobile 用户手机号
      * @return array;
@@ -261,6 +262,18 @@ class LoginController extends Controller
             );
         }
         return $data;
+    }
+
+
+
+    /**
+     * 发送邮件验证码
+     */
+    #TODO:暂未处理
+    public function Smtp($to_user,$from_user,$title,$body){
+        $smtp = new Smtp();
+        $smtp->smtp(C('relay_host'),'');
+        $smtp->sendmail($to_user,$from_user,$title,$body);
     }
 
 
@@ -359,6 +372,8 @@ class LoginController extends Controller
         }
         echo $gets['SubmitResult']['msg'];
     }
+
+
 
 
 

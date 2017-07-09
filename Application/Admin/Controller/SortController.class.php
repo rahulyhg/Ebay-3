@@ -30,7 +30,7 @@ class SortController extends Controller
         if(!empty($get_sort_list) && is_array($get_sort_list)){
             $data['code'] = "200";
             $data['msg'] = "获取成功！";
-            $data['body'] = $get_sort_list;
+            $data['body']['sort_list'] = $get_sort_list;
         }else{
             $data['code'] ='202';
             $data['msg'] = "获取失败！";
@@ -39,6 +39,40 @@ class SortController extends Controller
 
     }
 
+
+    /**
+     * 获取分类内容
+     */
+    #TODO:分类下的banner图尚未做处理
+    public function sort_content(){
+        $data = array();
+        $param = $_GET ? $_GET : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        $token = $param['token'] ? $param['token'] : "";
+        $objId = $param['id'] ? $param['id'] : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        if(empty($objId)){
+            $data['code'] = "202";
+            $data['msg'] = "参数错误！";
+            return $this->_array_to_json($data);
+        }
+        $sortmodel = new SortModel();
+        $get_object_info = $sortmodel->get_object_info($objId);
+        if($get_object_info){
+            $data['code'] = '200';
+            $data['msg'] = "获取数据成功！";
+            $data['body']['object_list'] = $get_object_info;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "获取数据失败！";
+        }
+        return $this->_array_to_json($data);
+
+    }
 
 
 
