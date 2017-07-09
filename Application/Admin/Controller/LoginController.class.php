@@ -211,6 +211,32 @@ class LoginController extends Controller
     }
 
 
+    /**
+     * 修改头像
+     */
+    public function update_headimg(){
+        $data = array();
+        $param = $_POST ? $_POST : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        $token = $param['token'] ? $param['token'] : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $upload_file = upload_file($_FILES['files']);
+        if($upload_file){
+            $data['code'] = "200";
+            $data['msg'] = "修改成功！";
+            $data['body']['headimg'] = $upload_file;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "修改失败！";
+        }
+        return $this->_array_to_json($data);
+    }
+
+
 
 
     /**

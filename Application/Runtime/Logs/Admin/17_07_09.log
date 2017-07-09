@@ -1,0 +1,962 @@
+[ 2017-07-09T10:22:26+08:00 ] 127.0.0.1 /ebay/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index
+
+[ 2017-07-09T10:22:48+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 1146:Table 'ebay.eb_sort' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `eb_sort`
+ERR: 1146:Table 'ebay.eb_sort' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `eb_sort`
+
+[ 2017-07-09T10:23:55+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `eb_sort` WHERE `is_visible` = 1 AND `is_del` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:00+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `eb_sort` WHERE `is_visible` = 1 AND `is_del` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:41+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:43+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:43+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:44+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:44+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:58+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:58+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:58+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:58+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T10:24:59+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:24:59+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T10:25:18+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `eb_sort` WHERE `is_visible` = 1 AND `is_del` = 0  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:20:45+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:22:48+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:23:05+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:24:08+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:25:29+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-09T12:26:17+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:26:32+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:26:38+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:26:46+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:26:49+08:00 ] ::1 /ebay/index.php/Admin/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:index
+
+[ 2017-07-09T12:27:03+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:27:38+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'uid' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 21 行.
+NOTIC: [2] Illegal string offset 'token' D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 22 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:27:54+08:00 ] 127.0.0.1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: files D:\phpStudy\WWW\ebay\Application\Admin\Controller\LoginController.class.php 第 227 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:28:35+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:29:17+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:30:24+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:30:59+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:32:29+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:33:37+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:36:21+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+
+[ 2017-07-09T12:37:33+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+
+[ 2017-07-09T12:37:48+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+
+[ 2017-07-09T12:39:23+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: tem_name D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 95 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:41:18+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+
+[ 2017-07-09T12:41:40+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 230 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Illegal string offset 'key' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Illegal string offset 'name' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'ext' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 269 行.
+NOTIC: [2] Illegal string offset 'error' D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 270 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 148 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 149 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 156 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:42:56+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:45:59+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-09T12:46:49+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:47:26+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-07-09T12:47:49+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savepath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+
+[ 2017-07-09T12:48:08+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+
+[ 2017-07-09T12:48:35+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'rootPath' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+
+[ 2017-07-09T12:50:22+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+
+[ 2017-07-09T12:51:02+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [2] Illegal string offset 'savename' D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+NOTIC: [8] Uninitialized string offset: 0 D:\phpStudy\WWW\ebay\Application\Admin\Common\function.php 第 51 行.
+
+[ 2017-07-09T12:52:50+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+
+[ 2017-07-09T12:53:05+08:00 ] ::1 /ebay/index.php/Admin/login/update_headimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\phpStudy\WWW\ebay\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
