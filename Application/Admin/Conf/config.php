@@ -69,12 +69,13 @@ return [
 
 
     //邮箱服务器
-    'relay_host' => '',
+    'relay_host' => 'smtp.qq.com',
     //邮箱端口
     'smtp_port' => 25,
     //邮箱用户名
-    'user' => '',
+    'user' => '576970513@qq.com',
     //邮箱密码
-    'pass' => '',
-
+    'pass' => 'PENG15808278683',
+    //邮件主题
+    'title' => '【易趣邮件】'
 ];

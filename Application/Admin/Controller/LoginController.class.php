@@ -7,8 +7,8 @@
  */
 namespace Admin\Controller;
 use Admin\Model\UserModel;
+use Org\Email;
 use Think\Controller;
-use Think\Smtp;
 class LoginController extends Controller
 {
 
@@ -269,11 +269,49 @@ class LoginController extends Controller
     /**
      * 发送邮件验证码
      */
-    #TODO:暂未处理
-    public function Smtp($to_user,$from_user,$title,$body){
-        $smtp = new Smtp();
-        $smtp->smtp(C('relay_host'),'');
-        $smtp->sendmail($to_user,$from_user,$title,$body);
+    public function Smtp(){
+        $data = array();
+        $param = $_POST ? $_POST : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        $token = $param['token'] ? $param['token'] : "";
+        $email = $param['email'] ? $param['rmail'] : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        //SMTP服务器
+        $smtpserver = "smtp.qq.com";
+        //SMTP服务器端口
+        $smtpserverport = C('smtp_port');
+        //SMTP服务器的用户邮箱
+        $smtpusermail = C('user');
+        //发送给谁
+        $smtpemailto = $email;
+        //SMTP服务器的用户帐号
+        $smtpuser = $smtpusermail;
+        //SMTP服务器的用户密码
+        $smtppass = C('pass');
+        //邮件主题
+        $mailsubject = C('title');
+        //邮件内容
+        $code = $this->random(6,1);
+        $mailbody = "<h1>欢迎进入易趣，您的验证码为:".$code."。</h1>";
+        //邮件格式（HTML/TXT）,TXT为文本邮件
+        $mailtype = "HTML";
+        $smtp = new Email($smtpserver, $smtpserverport, true, $smtpuser, $smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
+        $smtp->debug = false;//是否显示发送的调试信息
+        $send_code = $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
+        if($send_code){
+            $data['code'] = '200';
+            $data['msg'] = '发送成功！';
+            $data['body']['code'] = $code;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = '发送失败！';
+        }
+        return $this->_array_to_json($data);
+
     }
 
 
