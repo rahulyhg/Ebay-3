@@ -268,18 +268,10 @@ class LoginController extends Controller
 
     /**
      * 发送邮件验证码
+     * @param -$email 用户邮箱
+     * @retuen  false or code
      */
-    public function Smtp(){
-        $data = array();
-        $param = $_POST ? $_POST : "";
-        $uid = $param['uid'] ? $param['uid'] : "";
-        $token = $param['token'] ? $param['token'] : "";
-        $email = $param['email'] ? $param['rmail'] : "";
-        if(!check_token($uid,$token)){
-            $data['code'] = "202";
-            $data['msg'] = "身份验证失败！";
-            return $this->_array_to_json($data);
-        }
+    public function Smtp_code($email){
         //SMTP服务器
         $smtpserver = "smtp.qq.com";
         //SMTP服务器端口
@@ -299,18 +291,16 @@ class LoginController extends Controller
         $mailbody = "<h1>欢迎进入易趣，您的验证码为:".$code."。</h1>";
         //邮件格式（HTML/TXT）,TXT为文本邮件
         $mailtype = "HTML";
-        $smtp = new Email($smtpserver, $smtpserverport, true, $smtpuser, $smtppass);//这里面的一个true是表示使用身份验证,否则不使用身份验证.
+        //这里面的一个true是表示使用身份验证,否则不使用身份验证.
+        $smtp = new Email($smtpserver, $smtpserverport, true, $smtpuser, $smtppass);
         $smtp->debug = false;//是否显示发送的调试信息
         $send_code = $smtp->sendmail($smtpemailto, $smtpusermail, $mailsubject, $mailbody, $mailtype);
         if($send_code){
-            $data['code'] = '200';
-            $data['msg'] = '发送成功！';
-            $data['body']['code'] = $code;
+            return $code ? $code : "";
         }else{
-            $data['code'] = "202";
-            $data['msg'] = '发送失败！';
+            return false;
         }
-        return $this->_array_to_json($data);
+
 
     }
 

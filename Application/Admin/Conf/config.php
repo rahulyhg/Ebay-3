@@ -68,6 +68,8 @@ return [
     'TMPL_R_DELIM'          => '}>',   // 模板引擎普通标签结束标记
 
 
+
+    /* 邮件设置 */
     //邮箱服务器
     'relay_host' => 'smtp.qq.com',
     //邮箱端口
