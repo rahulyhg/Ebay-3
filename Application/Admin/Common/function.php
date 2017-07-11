@@ -8,8 +8,6 @@
 
 
 
-
-
 /**
  * 验证用户登录状态
  * @param -$uid 用户uid  -$token 用户唯一token

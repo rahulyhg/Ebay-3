@@ -1,0 +1,98 @@
+[ 2017-07-11T22:01:42+08:00 ] 127.0.0.1 /ebay/index.php/Admin/login/Smtp
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:Smtp
+
+[ 2017-07-11T22:02:13+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.059004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.059004s ]
+
+[ 2017-07-11T22:02:29+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2017-07-11T22:02:41+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-07-11T22:02:48+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-07-11T22:03:11+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner/sort_id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 115 行.
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2017-07-11T22:03:31+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `eb_sort` [ RunTime:0.0260s ]
+SQL: SHOW COLUMNS FROM `eb_banner` [ RunTime:0.0180s ]
+SQL: SELECT `id`,`url`,`image`,`sort_id`,`is_visible`,`is_del` FROM `eb_banner` WHERE `is_visible` = 1 AND `is_del` = 0  [ RunTime:0.0000s ]
+
+[ 2017-07-11T22:03:39+08:00 ] 127.0.0.1 /ebay/index.php/Admin/sort/get_sort_banner/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: uid D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 116 行.
+NOTIC: [8] Undefined index: token D:\phpStudy\WWW\ebay\Application\Admin\Controller\SortController.class.php 第 117 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

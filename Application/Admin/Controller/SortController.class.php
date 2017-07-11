@@ -13,7 +13,7 @@ class SortController extends Controller
 
 
     /**
-     * 获取分类
+     * 获取分类标签
      */
     public function get_sort_list(){
         $data = array();
@@ -41,15 +41,16 @@ class SortController extends Controller
 
 
     /**
-     * 获取分类内容
+     * 获取分类内容(前20条最新发布)
      */
-    #TODO:分类下的banner图尚未做处理
     public function sort_content(){
         $data = array();
         $param = $_GET ? $_GET : "";
         $uid = $param['uid'] ? $param['uid'] : "";
         $token = $param['token'] ? $param['token'] : "";
         $objId = $param['id'] ? $param['id'] : "";
+        $page = 0;
+        $size = 20;
         if(!check_token($uid,$token)){
             $data['code'] = "202";
             $data['msg'] = "身份验证失败！";
@@ -61,7 +62,7 @@ class SortController extends Controller
             return $this->_array_to_json($data);
         }
         $sortmodel = new SortModel();
-        $get_object_info = $sortmodel->get_object_info($objId);
+        $get_object_info = $sortmodel->get_object_info($objId,$page,$size);
         if($get_object_info){
             $data['code'] = '200';
             $data['msg'] = "获取数据成功！";
@@ -75,6 +76,86 @@ class SortController extends Controller
     }
 
 
+    /**
+     * 获取分类更多内容
+     */
+    public function more_sort_content(){
+        $data = array();
+        $param = $_GET ? $_GET : "";
+        $uid = $param['uid'] ? $param['uid'] : "";
+        $token = $param['token'] ? $param['token'] : "";
+        $sort_id = $param['id'] ? $param['id'] : "";
+        $page = $param['page'] ? $param['page'] : "";
+        $size = 20;
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $sortmodel = new SortModel();
+        $get_more_content = $sortmodel->get_object_info($sort_id,$page,$size);
+        if(!empty($get_more_content) && is_array($get_more_content)){
+            $data['code'] = "200";
+            $data['msg'] = "获取数据成功！";
+            $data['body']['object_list'] = $get_more_content;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "获取数据失败！";
+        }
+        return $this->_array_to_json($data);
+    }
+
+
+    /**
+     * 获取分类banner
+     */
+    public function get_sort_banner(){
+        $data = array();
+        $sort_id = $_GET['id'] ? $_GET['id'] : "";
+        $uid = $_GET['uid'] ? $_GET['uid'] : "";
+        $token = $_GET['token'] ? $_GET['token'] : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $sortmodel = new SortModel();
+        $get_sort_banner = $sortmodel->get_banner($sort_id);
+        if($get_sort_banner){
+            $data['code'] = "200";
+            $data['msg'] = "获取数据成功！";
+            $data['body']['banner_info'] = $get_sort_banner;
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "获取数据失败！";
+        }
+        return $this->_array_to_json($data);
+    }
+
+
+
+    /**
+     * 添加作品
+     */
+    #TODO:尚未处理
+    public function add_object(){
+        $data = array();
+        $uid = $_POST['uid'] ? $_POST['uid'] : "";
+        $token = $_POST['token'] ? $_POST['token'] : "";
+        $sort_id = $_POST['id'] ? $_POST['id'] : "";
+        $files = $_POST['files'] ? $_POST['files'] : "";
+        $descrption = $_POST['text'] ? $_POST['text'] : "";
+        $time = time();
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $sortmodel = new SortModel();
+        $add_object = $sortmodel->add_object($uid,$sort_id,$time);
+
+    }
+
 
     /**
      * 数组转换为json格式
@@ -82,7 +163,7 @@ class SortController extends Controller
      * @return  false or json;
      */
     public function _array_to_json($data){
-        if(empty($data) && !is_array($data)){
+        if(empty($data) || !is_array($data)){
             return false;
         }
         $data = json_encode($data);
