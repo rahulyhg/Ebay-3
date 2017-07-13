@@ -89,7 +89,7 @@ function upload_all($name,$maxSize,$type = 0){
         $_arrName = explode('.',$_name);
         $_lastName = end($_arrName);
         if(in_array($_lastName,$arr) && $size <= $maxSize){
-            $saveName = C('_UPLOAD_').uniqid().'.'.$_lastName;
+            $saveName = './Public/Upload/headimg/'.uniqid().'.'.$_lastName;
             move_uploaded_file($obj,$saveName);
         }
         return $saveName;
