@@ -79,5 +79,18 @@ return [
     //邮箱密码
     'pass' => 'PENG15808278683',
     //邮件主题
-    'title' => '【易趣邮件】'
+    'title' => '【易趣邮件】' ,
+
+
+    /*三方登录设置*/
+    //qq登录
+    //应用APPID
+    'qq_app_id' => "",
+    //应用app_key
+    'qq_app_key' => "",
+    //回调地址
+    'qq_callback_url' => "",
+
+
+
 ];

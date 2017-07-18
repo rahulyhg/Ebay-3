@@ -8,6 +8,7 @@
 namespace Admin\Controller;
 use Admin\Model\UserModel;
 use Org\Email;
+use Org\QQ;
 use Think\Controller;
 class LoginController extends Controller
 {
@@ -78,6 +79,7 @@ class LoginController extends Controller
     /**
      * 用户登录
      */
+    #TODO:用户登录三种方式登录
     public function login_in(){
         $param = $_POST ? $_POST : "";
         if(empty($param)){
@@ -97,13 +99,58 @@ class LoginController extends Controller
         if($user_info){
             $data['code'] = "200";
             $data['msg'] = "登录成功!";
-            $data['body'] = $user_info;
+            $data['body']['info'] = $user_info;
         }else{
             $data['code'] = "202";
             $data['msg'] = "登录失败!";
         }
         return $this->_array_to_json($data);
 
+    }
+
+
+    /**
+     * qq三方登录
+     */
+    public function QQ_login(){
+        $app_id = C('qq_app_id');
+        $app_key = C('qq_app_key');
+        $callBach_url = C('qq_callback_url');
+        $qq_obj = new QQ($app_id,$app_key,$callBach_url);
+        $code = $qq_obj->getAuthCode();
+    }
+
+
+    /**
+     * qq登录回调
+     */
+    public function callback(){
+        $data = array();
+        $app_id = C('qq_app_id');
+        $app_key = C('qq_app_key');
+        $callBach_url = C('qq_callback_url');
+        $Qqconnect = new QQ($app_id,$app_key,$callBach_url);
+        $openid = $Qqconnect->getOpenId();
+        $qq = session('qq');
+        $map = array();
+        $map['openid'] = $openid;
+        $userInfo = M('Member')->where($map)->find();
+        if(!empty($userInfo)){
+            //$this->success('登陆成功！',U('Member/index'));
+            $data['code'] = "200";
+            $data['msg'] = "登陆成功！";
+        }else {
+            $userInfo = $Qqconnect->getInfo($qq['openid'], $qq['access_token']);
+            if($userInfo){
+                $data['code'] = "200";
+                $data['msg'] = "登陆成功！";
+                $data['body']['info'] = $userInfo;
+            }else{
+                $data['code'] = "202";
+                $data['msg'] = "登录失败！";
+            }
+        }
+        return $this->_array_to_json($data);
     }
 
 

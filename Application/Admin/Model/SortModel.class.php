@@ -76,12 +76,28 @@ class SortModel extends Model
     /**
      * 添加作品
      * @param -$uid 用户uid -$sort_id 分类id  -$time 添加时间
+     * @return true or false
      */
-    public function add_object($uid,$sort_id,$time){
+    public function add_object($uid,$sort_id,$time,$file,$descrption,$label,$user_position){
         if(empty($uid) || empty($sort_id) || empty($time)){
             return false;
         }
-
+        $file = trim($file,'.');
+        $data = array(
+            'uid' => $uid,
+            'image_address' => $file,
+            'describe' => $descrption,
+            'user_position' => $user_position,
+            'Label' => $label,
+            'sort_id' => "",
+            'is_visible' => 1
+        );
+        $res = M('objectlist')->add($data);
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
     }
 
 

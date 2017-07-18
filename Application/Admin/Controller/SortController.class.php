@@ -138,7 +138,7 @@ class SortController extends Controller
      * 添加作品
      * @param $sort_id = 1 => 图片   $sort_id => 2 音乐
      */
-    #TODO:尚未处理
+    #TODO:发布尚未处理
     public function add_object(){
         $data = array();
         $uid = $_POST['uid'] ? $_POST['uid'] : "";
@@ -146,6 +146,8 @@ class SortController extends Controller
         $sort_id = $_POST['id'] ? $_POST['id'] : "";
         //$files = $_POST['files'] ? $_POST['files'] : "";
         $descrption = $_POST['text'] ? $_POST['text'] : "";
+        $label = $_POST['label'] ? $_POST['label'] : "";
+        $user_position = $_POST['position'] ? $_POST['position'] : "";
         $time = time();
         if(!check_token($uid,$token)){
             $data['code'] = "202";
@@ -159,7 +161,15 @@ class SortController extends Controller
             $file = upload_all('files','3145728','0');
         }
         $sortmodel = new SortModel();
-        $add_object = $sortmodel->add_object($uid,$sort_id,$time,$file,$descrption);
+        $add_object = $sortmodel->add_object($uid,$sort_id,$time,$file,$descrption,$label,$user_position);
+        if($add_object){
+            $data['code'] = "200";
+            $data['msg'] = "发表成功！";
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "发表失败！";
+        }
+        return $this->_array_to_json($data);
 
     }
 
