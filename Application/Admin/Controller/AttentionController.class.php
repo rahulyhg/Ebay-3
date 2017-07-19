@@ -44,6 +44,31 @@ class AttentionController extends Controller
     }
 
 
+    /**
+     * 取消关注
+     */
+    public function cancel_attention(){
+        $uid = $_GET['uid'] ? $_GET['uid'] : "";
+        $token = $_GET['token'] ? $_GET['token'] : "";
+        $be_uid = $_GET['be_uid'] ? $_GET['be_uid'] : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $attentionModel = new AttentionModel();
+        $del_be_uid = $attentionModel->del_be_uid($uid,$be_uid);
+        if($del_be_uid){
+            $data['code'] = "200";
+            $data['msg'] = "取消成功！";
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "取消关注失败！";
+        }
+        return $this->_array_to_json($data);
+    }
+
+
 
     /**
      * 获取关注
