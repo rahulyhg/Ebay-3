@@ -149,6 +149,7 @@ class SortController extends Controller
         $label = $_POST['label'] ? $_POST['label'] : "";
         $user_position = $_POST['position'] ? $_POST['position'] : "";
         $time = time();
+        $descrption = addslashes($descrption);
         if(!check_token($uid,$token)){
             $data['code'] = "202";
             $data['msg'] = "身份验证失败！";

@@ -117,13 +117,14 @@ class LoginController extends Controller
         $app_key = C('qq_app_key');
         $callBach_url = C('qq_callback_url');
         $qq_obj = new QQ($app_id,$app_key,$callBach_url);
-        $code = $qq_obj->getAuthCode();
+        $qq_obj->getAuthCode();
     }
 
 
     /**
      * qq登录回调
      */
+    #TODO:数据库暂未处理
     public function callback(){
         $data = array();
         $app_id = C('qq_app_id');
