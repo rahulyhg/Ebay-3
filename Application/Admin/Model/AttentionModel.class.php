@@ -58,4 +58,49 @@ class AttentionModel extends Model
     }
 
 
+    /**
+     * 点赞
+     * @param -$uid 会员uid  -$obj_id 作品id
+     * @return true or false
+     */
+    public function add_like($uid,$obj_id){
+        if(empty($uid) || empty($obj_id)){
+            return false;
+        }
+        $where = array(
+            'objectid' => $obj_id,
+            'formuserid' => $uid,
+        );
+        $res = M('objectlist')->where($where)->setInc('Fabulous_num',1);
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
+
+    }
+
+
+    /**
+     * 取消点赞
+     * @param -$uid 会员uid  -$obj_id 作品id
+     * @return true or false
+     */
+    public function del_like($uid,$obj_id){
+        if(empty($uid) || empty($obj_id)){
+            return false;
+        }
+        $where = array(
+            'objectid' => $obj_id,
+            'formuserid' => $uid,
+        );
+        $res = M('objectlist')->where($where)->setDec('Fabulous_num',1);
+        if($res){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
 }

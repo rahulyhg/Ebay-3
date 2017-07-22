@@ -450,13 +450,6 @@ class LoginController extends Controller
     }
 
 
-
-
-
-
-
-
-
     /**
      * 转换为json格式输出
      */

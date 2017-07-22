@@ -126,6 +126,58 @@ class AttentionController extends Controller
     }
 
 
+    /**
+     * 点赞
+     */
+    public function like(){
+        $uid = I('get.uid') ? I('get.uid') : "";
+        $token = I('get.token') ? I('get.token') : "";
+        $obj_id = I('get.id') ? I('get.id') : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $attentionModel = new AttentionModel();
+        $res = $attentionModel->add_like($uid,$obj_id);
+        if($res){
+            $data['code'] = "200";
+            $data['msg'] = "点赞成功！";
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "点赞失败！";
+        }
+        return $this->_array_to_json($data);
+
+    }
+
+
+    /**
+     * 取消点赞
+     */
+    public function del_like(){
+        $uid = I('get.uid') ? I('get.uid') : "";
+        $token = I('get.token') ? I('get.token') : "";
+        $obj_id = I('get.id') ? I('get.id') : "";
+        if(!check_token($uid,$token)){
+            $data['code'] = "202";
+            $data['msg'] = "身份验证失败！";
+            return $this->_array_to_json($data);
+        }
+        $attentionModel = new AttentionModel();
+        $res = $attentionModel->del_like($uid,$obj_id);
+        if($res){
+            $data['code'] = "200";
+            $data['msg'] = "取消成功！";
+        }else{
+            $data['code'] = "202";
+            $data['msg'] = "取消失败！";
+        }
+        return $this->_array_to_json($data);
+
+    }
+
+
 
     /**
      * 数组转换为json格式
