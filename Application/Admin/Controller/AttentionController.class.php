@@ -118,7 +118,7 @@ class AttentionController extends Controller
             $data['body']['data'] = $get_attention_list;
         }else{
             $data['code'] = "202";
-            $data['msg'] = "获取失败！";
+            $data['msg'] = "没有数据！";
             $data['body']['data'] = "";
         }
         return $this->_array_to_json($data);

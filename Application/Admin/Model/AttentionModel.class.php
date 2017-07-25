@@ -25,7 +25,7 @@ class AttentionModel extends Model
         //);
         //$data = M('attention as a')->join('eb_objectlist as o ON o.uid = a.be_uid')->where($where)->select();
         $sql = "select O.* from `eb_attention` as a, `eb_objectlist` as O 
-                WHERE a.uid = '$uid' AND a.be_uid = O.uid AND O.is_visible = 1 
+                WHERE a.uid = '$uid' AND a.be_uid = O.formuserid AND O.is_visible = 1 
                 ORDER BY O.add_time DESC ";
         $res = $this->query($sql);
         if($res){
