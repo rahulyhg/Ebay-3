@@ -103,6 +103,7 @@ class LoginController extends Controller
         }else{
             $data['code'] = "202";
             $data['msg'] = "登录失败!";
+            $data['body']['info'] = "";
         }
         return $this->_array_to_json($data);
 
