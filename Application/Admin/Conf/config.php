@@ -90,6 +90,8 @@ return [
     'qq_app_key' => "",
     //回调地址
     'qq_callback_url' => "",
+    //登录来源
+    'source' => 1,
 
 
 

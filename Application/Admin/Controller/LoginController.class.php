@@ -125,7 +125,7 @@ class LoginController extends Controller
     /**
      * qq登录回调
      */
-    #TODO:数据库暂未处理
+    #TODO:qq登陆后添加用户列表的数据暂未处理
     public function callback(){
         $data = array();
         $app_id = C('qq_app_id');
@@ -136,14 +136,28 @@ class LoginController extends Controller
         $qq = session('qq');
         $map = array();
         $map['openid'] = $openid;
-        $userInfo = M('Member')->where($map)->find();
+        $userInfo = M('qq_info')->where($map)->find();
         if(!empty($userInfo)){
             //$this->success('登陆成功！',U('Member/index'));
             $data['code'] = "200";
             $data['msg'] = "登陆成功！";
         }else {
+            $userModel = new UserModel();
+            $last_uid = $userModel->get_last_uid();
             $userInfo = $Qqconnect->getInfo($qq['openid'], $qq['access_token']);
-            if($userInfo){
+            if(!$last_uid){
+                $last_uid = $userModel->get_uid();
+            }
+            $data = array(
+                'userid' => $last_uid + 1,
+                'openid' => $qq['openid'],
+                'regdate' => $_SERVER['REMOTE_ADDR'],
+                'status' => 1,
+                'source' => C('source'),
+            );
+            $add_qq_info = M('qq_info')->add($data);
+            $add_userlist_info = M('user')->add();
+            if($userInfo && $add_qq_info){
                 $data['code'] = "200";
                 $data['msg'] = "登陆成功！";
                 $data['body']['info'] = $userInfo;

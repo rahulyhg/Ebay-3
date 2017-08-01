@@ -50,7 +50,7 @@ class UserModel extends Model
 
 
     /**
-     * 获取用户信息
+     * 登录获取用户信息
      * @param -$password 用户密码 $ip -登录ip  $last_time -最后登录时间
      * @param -$phone -用户手机号  $email -用户邮箱 $nickname -用户名称
      * @return false or array
@@ -150,6 +150,22 @@ class UserModel extends Model
         }
 
     }
+
+
+
+    /**
+     * 获取用户表最后uid
+     * @return array or false
+     */
+    public function get_last_uid(){
+        $res = M('user')->order('uid desc')->limit(1)->find();
+        if(!empty($res)){
+            return $res[0]['uid'];
+        }else{
+            return false;
+        }
+    }
+
 
 
 
